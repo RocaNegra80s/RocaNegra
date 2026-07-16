@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Youtube, Disc, Music, FileText, ChevronRight, Instagram, Users, ExternalLink, Image as ImageIcon, Volume2 } from 'lucide-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: '/RocaNegra/', // <-- Esto asegura que las imágenes y archivos carguen correctamente en GitHub Pages
+})
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
