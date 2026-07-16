@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 0 0% 95%;
+    --card: 220 15% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 22 90% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 30% 15%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 22 90% 46%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 15%;
+    --input: 220 15% 15%;
+    --ring: 22 90% 46%;
+    --radius: 0.5rem;
+    --sidebar-background: 220 20% 6%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 22 90% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 15%;
+    --sidebar-ring: 22 90% 46%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+@layer utilities {
+  .font-metal {
+    font-family: 'Metal Mania', cursive;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(232, 93, 4, 0.5), 0 0 20px rgba(232, 93, 4, 0.3);
+  }
+
+  .bg-overlay-dark {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%);
+  }
+
+  .bg-overlay-darker {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.85) 0%, rgba(10, 10, 10, 0.95) 100%);
+  }
+
+  .section-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
