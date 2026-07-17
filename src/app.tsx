@@ -235,10 +235,10 @@ Por fin luego llegará
 
   // Integrantes de la banda (Se quita el prefijo 'public/')
   const integrantes = [
-    { nombre: "Pato", instrumento: "Voz / Guitarra / Líder", img: "Pato.JPG" },
-    { nombre: "Pancho", instrumento: "Guitarra Solista", img: "Pancho.JPG" },
-    { nombre: "Danny", instrumento: "Bajo y Coros", img: "Danny.JPG" },
-    { nombre: "Jimmy", instrumento: "Batería / Percusión", img: "Jimmy.JPG" }
+    { nombre: "Pato", instrumento: "Voz / Guitarra / Líder", img: "public/Pato.JPG" },
+    { nombre: "Pancho", instrumento: "Guitarra Solista", img: "public/Pancho.JPG" },
+    { nombre: "Danny", instrumento: "Bajo y Coros", img: "public/Danny.JPG" },
+    { nombre: "Jimmy", instrumento: "Batería / Percusión", img: "public/Jimmy.JPG" }
   ];
 
   // Webs amigas
